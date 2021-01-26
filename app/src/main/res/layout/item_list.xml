@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/dominos"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/llRatting">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:text="Domino's Pizza"/>
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="Pizza"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtOffer"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="200 rs per person | 50 min"/>
+
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:gravity="center_vertical"
+                android:text="Close in 30 minutes"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtDescription"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/linkColor"
+                android:text="Well sanitized kitchen | Daily temprature checks | Rider hand wash"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:id="@+id/llRatting"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_ratting">
+
+            <TextView
+                android:id="@+id/txtRatting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.5"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
