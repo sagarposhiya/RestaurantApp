@@ -15,6 +15,7 @@
             android:id="@+id/imgIcon"
             android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:minWidth="150dp"
             android:src="@drawable/dominos"/>
 
     </LinearLayout>
